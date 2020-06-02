@@ -10,6 +10,10 @@ html {
 
 }
 
+* {
+    outline: none;
+}
+
 @media (min-width : 320px) {
 
     /*---MAIN PAGE---*/
@@ -31,7 +35,7 @@ html {
         align-items: center;
         justify-content: center;
         flex-flow: column;
-        
+
     }
 
     .main_title {
@@ -55,7 +59,7 @@ html {
     .button_wrap {
         position: absolute;
         width: 100%;
-        bottom: 50px;
+        bottom: 45px;
         display: flex;
 
     }
@@ -64,13 +68,18 @@ html {
         position: relative;
         height: 45px;
         width: 145px;
-        border-radius: 100px;
         font-weight: 700;
         margin: auto;
-        background-color: #f1f1f1;
         border: none;
+        color: #5BA33D;
+        background-color: #fff;
+        transition: 0.2s;
+
+
+        /*---//  MAIN PAGE---*/
     }
 
-
-    /*---//  MAIN PAGE---*/
-}
+    #get_started_button:active {
+        border-top: 1.2px solid #000;
+        border-bottom: 1.2px solid #000;
+    }
